@@ -19,3 +19,7 @@ clickjeon-extension/docs/
 
 # 루트 내부 문서
 docs/superpowers/
+docs/chrome-store-listing.md
+docs/social-content.md
+docs/naver-blog-post.md
+.vercel

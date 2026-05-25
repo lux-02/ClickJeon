@@ -88,21 +88,11 @@
       cursor: pointer; border: none;
     }
     .btn-primary {
-      background: var(--surface);
-      color: var(--muted);
-      border: 1px solid var(--border);
-      position: relative;
-      cursor: not-allowed;
-      opacity: 0.7;
+      background: var(--accent);
+      color: #0d1117;
+      border: 1px solid var(--accent);
     }
-    .btn-primary .review-badge {
-      position: absolute; top: -10px; right: -10px;
-      background: var(--orange);
-      color: #fff;
-      font-size: 0.65rem; font-weight: 700;
-      padding: 2px 7px; border-radius: 10px;
-      letter-spacing: 0.03em;
-    }
+    .btn-primary:hover { background: #2ea043; border-color: #2ea043; }
     .btn-secondary {
       background: transparent;
       color: var(--text);
@@ -226,11 +216,10 @@
   <h1>검색 결과를 클릭하기 전에,<br><em>AI가 먼저 확인합니다</em></h1>
   <p>구글 검색 결과에서 SEO 포이즈닝, 피싱 사이트, 경쟁사 우회 광고를 실시간으로 탐지합니다. 의심스러운 링크는 블러 처리해 실수 클릭을 방지합니다.</p>
   <div class="cta-group">
-    <button class="btn btn-primary" disabled>
-      <span class="review-badge">심사 중</span>
+    <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/inopiebmhgffoijdijpimkbmkicbeejh" target="_blank">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><circle cx="12" cy="12" r="3"/></svg>
       Chrome에 설치
-    </button>
+    </a>
     <a class="btn btn-secondary" href="https://github.com/lux-02/ClickJeon" target="_blank">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
       GitHub 소스 보기
@@ -311,13 +300,13 @@
 <section id="how">
   <div class="section-label">사용 방법</div>
   <h2 class="section-title">3단계면 충분합니다</h2>
-  <p class="section-desc">Chrome 웹스토어 심사가 완료되면 바로 설치할 수 있습니다.</p>
+  <p class="section-desc">Chrome 웹스토어에서 바로 설치할 수 있습니다.</p>
   <div class="steps">
     <div class="step">
       <div class="step-num">1</div>
       <div class="step-body">
         <h3>확장 프로그램 설치</h3>
-        <p>Chrome 웹스토어에서 클릭전을 설치합니다. (심사 완료 후 링크 제공 예정)</p>
+        <p><a href="https://chromewebstore.google.com/detail/inopiebmhgffoijdijpimkbmkicbeejh" target="_blank" style="color:var(--accent)">Chrome 웹스토어</a>에서 클릭전을 설치합니다.</p>
       </div>
     </div>
     <div class="step">

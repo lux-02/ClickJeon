@@ -90,7 +90,9 @@ Softonic 같은 비공식 다운로드 사이트는 **주의** 배지와 함께 
 
 ## 설치 방법
 
-> **Chrome 웹스토어 심사 중** — 버전 1.0.0이 2026년 5월 25일 심사 신청됐습니다. 심사 완료 전까지는 아래 로컬 설치 방법을 이용해 주세요.
+**[Chrome 웹스토어에서 설치](https://chromewebstore.google.com/detail/inopiebmhgffoijdijpimkbmkicbeejh)** — 클릭 한 번으로 바로 설치할 수 있습니다.
+
+또는 소스에서 직접 로드하려면:
 
 1. 이 저장소를 클론합니다.
    ```bash
