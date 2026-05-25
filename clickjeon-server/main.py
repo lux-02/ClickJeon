@@ -27,7 +27,7 @@ _LANDING_HTML = """<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>클릭전 — 검색 결과를 클릭하기 전에, AI가 먼저 확인합니다</title>
-  <meta name="description" content="구글 검색 결과에서 SEO 포이즈닝·피싱·우회 광고를 AI가 실시간으로 탐지하는 Chrome 확장 프로그램">
+  <meta name="description" content="구글 검색 결과에서 피싱·우회 광고를 찾아내고 수상한 링크를 블러 처리해 실수 클릭을 막는 Chrome 확장 프로그램">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -111,7 +111,7 @@ _LANDING_HTML = """<!DOCTYPE html>
 <div class="hero">
   <div class="hero-badge">Chrome 확장 프로그램</div>
   <h1>검색 결과를 클릭하기 전에,<br><em>AI가 먼저 확인합니다</em></h1>
-  <p>구글 검색 결과에서 SEO 포이즈닝, 피싱 사이트, 경쟁사 우회 광고를 실시간으로 탐지합니다. 의심스러운 링크는 블러 처리해 실수 클릭을 방지합니다.</p>
+  <p>구글 검색 결과에서 피싱이나 우회 광고를 찾아내고, 수상한 링크는 흐릿하게 보여 실수로 누르는 일을 막습니다.</p>
   <div class="cta-group">
     <button class="btn btn-primary" disabled>
       <span class="review-badge">심사 중</span>
@@ -127,8 +127,8 @@ _LANDING_HTML = """<!DOCTYPE html>
 <hr>
 <section id="grades">
   <div class="section-label">신뢰도 등급</div>
-  <h2 class="section-title">5단계로 한눈에 확인</h2>
-  <p class="section-desc">AI가 도메인과 검색 의도를 분석해 각 결과에 등급을 부여합니다.</p>
+  <h2 class="section-title">공식·위험·광고, 배지로 바로 구분됩니다</h2>
+  <p class="section-desc">도메인과 검색 의도를 바탕으로 각 결과에 등급을 표시합니다.</p>
   <div class="grade-grid">
     <div class="grade-card"><span class="grade-badge grade-official">공식 배포처</span><h3>OFFICIAL</h3><p>검색 키워드의 공식 도메인 또는 공식 앱스토어</p></div>
     <div class="grade-card"><span class="grade-badge grade-trusted">신뢰할 수 있음</span><h3>TRUSTED</h3><p>나무위키, GitHub 등 공인된 신뢰 플랫폼</p></div>
@@ -141,7 +141,7 @@ _LANDING_HTML = """<!DOCTYPE html>
 <section id="screenshots">
   <div class="section-label">스크린샷</div>
   <h2 class="section-title">실제 동작 화면</h2>
-  <p class="section-desc">카카오톡, 클로드 등 실제 검색에서 탐지된 결과입니다.</p>
+  <p class="section-desc">카카오톡이나 클로드 같은 실제 검색에서 피싱과 사칭 사이트가 어떻게 걸러졌는지 확인해 보세요.</p>
   <div class="screenshot-grid">
     <figure class="screenshot-card">
       <img src="https://raw.githubusercontent.com/lux-02/ClickJeon/main/docs/screenshots/popup.png" alt="확장 팝업" loading="lazy">
@@ -168,12 +168,12 @@ _LANDING_HTML = """<!DOCTYPE html>
 <hr>
 <section id="how">
   <div class="section-label">사용 방법</div>
-  <h2 class="section-title">3단계면 충분합니다</h2>
-  <p class="section-desc">Chrome 웹스토어 심사가 완료되면 바로 설치할 수 있습니다.</p>
+  <h2 class="section-title">설치 후 버튼 하나로 바로 분석 시작</h2>
+  <p class="section-desc">심사가 끝나면 바로 설치할 수 있습니다. 지금은 GitHub에서 직접 설치하실 수 있습니다.</p>
   <div class="steps">
-    <div class="step"><div class="step-num">1</div><div class="step-body"><h3>확장 프로그램 설치</h3><p>Chrome 웹스토어에서 클릭전을 설치합니다. (심사 완료 후 링크 제공 예정)</p></div></div>
-    <div class="step"><div class="step-num">2</div><div class="step-body"><h3>Google 검색 후 분석 요청</h3><p>원하는 키워드를 검색한 뒤, 툴바의 클릭전 아이콘을 클릭하고 "지금 분석하기"를 누릅니다.</p></div></div>
-    <div class="step"><div class="step-num">3</div><div class="step-body"><h3>등급 확인 후 안전하게 클릭</h3><p>AI 분석이 완료되면 각 결과에 등급 배지가 표시됩니다. 블러 처리된 결과는 클릭해서 내용을 확인할 수 있습니다.</p></div></div>
+    <div class="step"><div class="step-num">1</div><div class="step-body"><h3>Chrome에 설치하기</h3><p>Chrome 웹스토어에서 클릭전을 설치합니다. (심사 완료 후 링크 제공 예정)</p></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-body"><h3>검색 후 아이콘을 눌러 분석 시작</h3><p>원하는 키워드를 검색한 뒤, 툴바의 클릭전 아이콘을 클릭하고 "지금 분석하기"를 누릅니다.</p></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-body"><h3>배지 확인 후 링크 방문</h3><p>AI 분석이 완료되면 각 결과에 등급 배지가 표시됩니다. 블러 처리된 결과는 클릭해서 내용을 확인할 수 있습니다.</p></div></div>
   </div>
 </section>
 <hr>
