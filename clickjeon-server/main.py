@@ -61,8 +61,8 @@ _LANDING_HTML = """<!DOCTYPE html>
     .hero p { font-size: 1.1rem; color: var(--muted); max-width: 560px; margin: 0 auto 40px; }
     .cta-group { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
     .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 8px; font-size: 0.95rem; font-weight: 600; text-decoration: none; transition: all 0.15s; cursor: pointer; border: none; }
-    .btn-primary { background: var(--surface); color: var(--muted); border: 1px solid var(--border); position: relative; cursor: not-allowed; opacity: 0.7; }
-    .btn-primary .review-badge { position: absolute; top: -10px; right: -10px; background: var(--orange); color: #fff; font-size: 0.65rem; font-weight: 700; padding: 2px 7px; border-radius: 10px; }
+    .btn-primary { background: var(--accent); color: #0d1117; border: 1px solid var(--accent); }
+    .btn-primary:hover { background: #2ea043; border-color: #2ea043; }
     .btn-secondary { background: transparent; color: var(--text); border: 1px solid var(--border); }
     .btn-secondary:hover { background: var(--surface); border-color: var(--muted); }
     .btn svg { width: 18px; height: 18px; }
@@ -113,11 +113,10 @@ _LANDING_HTML = """<!DOCTYPE html>
   <h1>검색 결과를 클릭하기 전에,<br><em>AI가 먼저 확인합니다</em></h1>
   <p>구글 검색 결과에서 피싱이나 우회 광고를 찾아내고, 수상한 링크는 흐릿하게 보여 실수로 누르는 일을 막습니다.</p>
   <div class="cta-group">
-    <button class="btn btn-primary" disabled>
-      <span class="review-badge">심사 중</span>
+    <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/inopiebmhgffoijdijpimkbmkicbeejh" target="_blank">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
       Chrome에 설치
-    </button>
+    </a>
     <a class="btn btn-secondary" href="https://github.com/lux-02/ClickJeon" target="_blank">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
       GitHub 소스 보기
@@ -169,9 +168,9 @@ _LANDING_HTML = """<!DOCTYPE html>
 <section id="how">
   <div class="section-label">사용 방법</div>
   <h2 class="section-title">설치 후 버튼 하나로 바로 분석 시작</h2>
-  <p class="section-desc">심사가 끝나면 바로 설치할 수 있습니다. 지금은 GitHub에서 직접 설치하실 수 있습니다.</p>
+  <p class="section-desc">Chrome 웹스토어에서 바로 설치할 수 있습니다.</p>
   <div class="steps">
-    <div class="step"><div class="step-num">1</div><div class="step-body"><h3>Chrome에 설치하기</h3><p>Chrome 웹스토어에서 클릭전을 설치합니다. (심사 완료 후 링크 제공 예정)</p></div></div>
+    <div class="step"><div class="step-num">1</div><div class="step-body"><h3>Chrome에 설치하기</h3><p><a href="https://chromewebstore.google.com/detail/inopiebmhgffoijdijpimkbmkicbeejh" target="_blank" style="color:var(--accent)">Chrome 웹스토어</a>에서 클릭전을 설치합니다.</p></div></div>
     <div class="step"><div class="step-num">2</div><div class="step-body"><h3>검색 후 아이콘을 눌러 분석 시작</h3><p>원하는 키워드를 검색한 뒤, 툴바의 클릭전 아이콘을 클릭하고 "지금 분석하기"를 누릅니다.</p></div></div>
     <div class="step"><div class="step-num">3</div><div class="step-body"><h3>배지 확인 후 링크 방문</h3><p>AI 분석이 완료되면 각 결과에 등급 배지가 표시됩니다. 블러 처리된 결과는 클릭해서 내용을 확인할 수 있습니다.</p></div></div>
   </div>
