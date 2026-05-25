@@ -114,7 +114,7 @@ _LANDING_HTML = """<!DOCTYPE html>
   <p>구글 검색 결과에서 피싱이나 우회 광고를 찾아내고, 수상한 링크는 흐릿하게 보여 실수로 누르는 일을 막습니다.</p>
   <div class="cta-group">
     <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/inopiebmhgffoijdijpimkbmkicbeejh" target="_blank">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+      <img src="https://raw.githubusercontent.com/lux-02/ClickJeon/main/clickjeon-extension/icons/icon-48.png" width="20" height="20" alt="클릭전 아이콘" style="border-radius:4px">
       Chrome에 설치
     </a>
     <a class="btn btn-secondary" href="https://github.com/lux-02/ClickJeon" target="_blank">
