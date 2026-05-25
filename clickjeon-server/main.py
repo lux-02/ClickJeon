@@ -1,6 +1,7 @@
+import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 from routers.analyze import router as analyze_router
@@ -20,6 +21,12 @@ app.add_middleware(
 )
 
 app.include_router(analyze_router)
+
+
+@app.get("/")
+async def landing():
+    path = os.path.join(os.path.dirname(__file__), "public", "index.html")
+    return FileResponse(path, media_type="text/html")
 
 
 @app.get("/health")

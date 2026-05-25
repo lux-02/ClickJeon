@@ -1,9 +1,4 @@
 {
   "builds": [{ "src": "main.py", "use": "@vercel/python" }],
-  "routes": [
-    { "src": "/analyze", "dest": "main.py" },
-    { "src": "/health",  "dest": "main.py" },
-    { "src": "/privacy", "dest": "main.py" },
-    { "src": "/",        "dest": "/public/index.html" }
-  ]
+  "routes": [{ "src": "/(.*)", "dest": "main.py" }]
 }
