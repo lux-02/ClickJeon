@@ -1,5 +1,5 @@
 // background/service-worker.js
-const API_URL = 'https://clickjeon-server.vercel.app/analyze'
+const API_URL = 'https://clickjeon.n2f.site/analyze'
 const TIMEOUT_MS = 30000
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
