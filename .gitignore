@@ -1,3 +1,21 @@
+# 시크릿 & 환경변수
+.env
+.env.local
+.env*.local
+
+# macOS
+.DS_Store
+
+# 로컬 도구 설정
+.claude/
+.mcp.json
+
 # 로컬 전용 문서
-docs/
 ClickJeon_PRD.md
+
+# 확장 내부 파일
+clickjeon-extension/.superpowers/
+clickjeon-extension/docs/
+
+# 루트 내부 문서
+docs/superpowers/

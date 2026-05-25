@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "클릭전 (ClickJeon)",
+  "version": "1.0.0",
+  "description": "검색 결과를 클릭하기 전에, AI가 먼저 확인합니다",
+  "default_locale": "ko",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "host_permissions": [
+    "https://www.google.com/search*",
+    "https://clickjeon-server.vercel.app/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/search*"],
+      "js": [
+        "utils/dom-parser.js",
+        "utils/vendor-matcher.js",
+        "utils/typo-detector.js",
+        "content/content.js"
+      ],
+      "css": ["content/overlay.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["data/korean-vendors.json"],
+      "matches": ["https://www.google.com/*"]
+    }
+  ]
+}

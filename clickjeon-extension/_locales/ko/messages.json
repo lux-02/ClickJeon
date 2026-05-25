@@ -1,0 +1,8 @@
+{
+  "appName": {
+    "message": "클릭전 (ClickJeon)"
+  },
+  "appDescription": {
+    "message": "검색 결과를 클릭하기 전에, AI가 먼저 확인합니다"
+  }
+}

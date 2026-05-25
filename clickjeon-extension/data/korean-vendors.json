@@ -1,0 +1,402 @@
+[
+  {
+    "id": "kakaotalk",
+    "name": "카카오톡",
+    "aliases": ["KakaoTalk", "카톡"],
+    "official_domains": ["kakao.com", "kakaocorp.com"],
+    "publisher": "Kakao Corp.",
+    "keywords": ["카카오톡", "kakaotalk", "카톡 다운로드", "카톡 pc", "카카오톡 설치"]
+  },
+  {
+    "id": "naver-whale",
+    "name": "네이버 웨일",
+    "aliases": ["Whale", "웨일 브라우저"],
+    "official_domains": ["whale.naver.com", "naver.com"],
+    "publisher": "Naver Corp.",
+    "keywords": ["네이버 웨일", "whale browser", "웨일 다운로드"]
+  },
+  {
+    "id": "alzip",
+    "name": "알집",
+    "aliases": ["ALZip"],
+    "official_domains": ["altools.co.kr", "estsoft.com"],
+    "publisher": "이스트소프트",
+    "keywords": ["알집", "alzip", "압축 프로그램", "알집 다운로드"]
+  },
+  {
+    "id": "v3lite",
+    "name": "V3 Lite",
+    "aliases": ["V3", "안랩"],
+    "official_domains": ["ahnlab.com", "v3lite.com"],
+    "publisher": "AhnLab",
+    "keywords": ["v3 lite", "v3라이트", "안랩", "ahnlab 다운로드"]
+  },
+  {
+    "id": "gomplayer",
+    "name": "곰플레이어",
+    "aliases": ["GOM Player"],
+    "official_domains": ["gomlab.com"],
+    "publisher": "GOM & Company",
+    "keywords": ["곰플레이어", "gom player", "곰플 다운로드"]
+  },
+  {
+    "id": "vscode",
+    "name": "Visual Studio Code",
+    "aliases": ["VS Code", "vscode"],
+    "official_domains": ["code.visualstudio.com", "visualstudio.com"],
+    "publisher": "Microsoft",
+    "keywords": ["vs code", "vscode", "visual studio code 다운로드"]
+  },
+  {
+    "id": "putty",
+    "name": "PuTTY",
+    "aliases": ["putty"],
+    "official_domains": ["putty.org", "chiark.greenend.org.uk"],
+    "publisher": "Simon Tatham",
+    "keywords": ["putty", "putty 다운로드", "ssh 클라이언트"]
+  },
+  {
+    "id": "winscp",
+    "name": "WinSCP",
+    "aliases": [],
+    "official_domains": ["winscp.net"],
+    "publisher": "Martin Prikryl",
+    "keywords": ["winscp", "winscp 다운로드", "sftp 클라이언트"]
+  },
+  {
+    "id": "7zip",
+    "name": "7-Zip",
+    "aliases": ["7zip"],
+    "official_domains": ["7-zip.org"],
+    "publisher": "Igor Pavlov",
+    "keywords": ["7-zip", "7zip", "7zip 다운로드", "압축 해제"]
+  },
+  {
+    "id": "obs",
+    "name": "OBS Studio",
+    "aliases": ["OBS"],
+    "official_domains": ["obsproject.com"],
+    "publisher": "OBS Project",
+    "keywords": ["obs studio", "obs 다운로드", "방송 프로그램"]
+  },
+  {
+    "id": "line",
+    "name": "라인",
+    "aliases": ["LINE"],
+    "official_domains": ["line.me", "naver.com"],
+    "publisher": "LINE Corp.",
+    "keywords": ["라인", "line 다운로드", "line pc"]
+  },
+  {
+    "id": "telegram",
+    "name": "텔레그램",
+    "aliases": ["Telegram"],
+    "official_domains": ["telegram.org"],
+    "publisher": "Telegram FZ-LLC",
+    "keywords": ["텔레그램", "telegram 다운로드", "telegram desktop"]
+  },
+  {
+    "id": "winrar",
+    "name": "WinRAR",
+    "aliases": [],
+    "official_domains": ["win-rar.com", "rarlab.com"],
+    "publisher": "RARLAB",
+    "keywords": ["winrar", "winrar 다운로드", "rar 압축"]
+  },
+  {
+    "id": "bandizip",
+    "name": "반디집",
+    "aliases": ["Bandizip"],
+    "official_domains": ["bandisoft.com"],
+    "publisher": "Bandisoft",
+    "keywords": ["반디집", "bandizip", "반디집 다운로드"]
+  },
+  {
+    "id": "vlc",
+    "name": "VLC",
+    "aliases": ["VLC Media Player"],
+    "official_domains": ["videolan.org"],
+    "publisher": "VideoLAN",
+    "keywords": ["vlc", "vlc 다운로드", "vlc media player"]
+  },
+  {
+    "id": "kakao-tv",
+    "name": "카카오TV",
+    "aliases": ["Kakao TV"],
+    "official_domains": ["kakao.com", "tv.kakao.com"],
+    "publisher": "Kakao Corp.",
+    "keywords": ["카카오tv", "kakao tv 다운로드"]
+  },
+  {
+    "id": "hwp",
+    "name": "한컴오피스",
+    "aliases": ["Hancom Office", "아래아한글", "HWP"],
+    "official_domains": ["hancom.com"],
+    "publisher": "한글과컴퓨터",
+    "keywords": ["한컴오피스", "아래아한글", "hwp 다운로드", "hancom office"]
+  },
+  {
+    "id": "libreoffice",
+    "name": "LibreOffice",
+    "aliases": [],
+    "official_domains": ["libreoffice.org"],
+    "publisher": "The Document Foundation",
+    "keywords": ["libreoffice", "libreoffice 다운로드", "오픈오피스"]
+  },
+  {
+    "id": "altools",
+    "name": "알약",
+    "aliases": ["ALYac"],
+    "official_domains": ["alyac.altools.co.kr", "altools.co.kr"],
+    "publisher": "이스트시큐리티",
+    "keywords": ["알약", "alyac", "알약 다운로드"]
+  },
+  {
+    "id": "kakaopay",
+    "name": "카카오페이",
+    "aliases": ["KakaoPay"],
+    "official_domains": ["kakaopay.com"],
+    "publisher": "Kakao Pay Corp.",
+    "keywords": ["카카오페이", "kakaopay 다운로드", "카카오페이 pc"]
+  },
+  {
+    "id": "toss",
+    "name": "토스",
+    "aliases": ["Toss"],
+    "official_domains": ["toss.im", "viva.com"],
+    "publisher": "Viva Republica",
+    "keywords": ["토스", "toss 다운로드", "토스 pc"]
+  },
+  {
+    "id": "samsung-pay",
+    "name": "삼성페이",
+    "aliases": ["Samsung Pay"],
+    "official_domains": ["samsung.com"],
+    "publisher": "Samsung Electronics",
+    "keywords": ["삼성페이", "samsung pay 다운로드"]
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "aliases": [],
+    "official_domains": ["git-scm.com"],
+    "publisher": "Software Freedom Conservancy",
+    "keywords": ["git", "git 다운로드", "git for windows"]
+  },
+  {
+    "id": "notepadpp",
+    "name": "Notepad++",
+    "aliases": ["notepad plus plus"],
+    "official_domains": ["notepad-plus-plus.org"],
+    "publisher": "Don Ho",
+    "keywords": ["notepad++", "notepad++ 다운로드", "노트패드"]
+  },
+  {
+    "id": "chrome",
+    "name": "Google Chrome",
+    "aliases": ["Chrome"],
+    "official_domains": ["google.com", "chrome.google.com"],
+    "publisher": "Google LLC",
+    "keywords": ["구글 크롬", "chrome 다운로드", "chrome 설치"]
+  },
+  {
+    "id": "edge",
+    "name": "Microsoft Edge",
+    "aliases": ["Edge"],
+    "official_domains": ["microsoft.com"],
+    "publisher": "Microsoft",
+    "keywords": ["edge 다운로드", "microsoft edge", "엣지 브라우저"]
+  },
+  {
+    "id": "firefox",
+    "name": "Firefox",
+    "aliases": ["파이어폭스"],
+    "official_domains": ["mozilla.org", "firefox.com"],
+    "publisher": "Mozilla Foundation",
+    "keywords": ["firefox", "파이어폭스", "firefox 다운로드"]
+  },
+  {
+    "id": "zoom",
+    "name": "Zoom",
+    "aliases": [],
+    "official_domains": ["zoom.us"],
+    "publisher": "Zoom Video Communications",
+    "keywords": ["zoom", "zoom 다운로드", "zoom 설치", "줌 화상회의"]
+  },
+  {
+    "id": "teams",
+    "name": "Microsoft Teams",
+    "aliases": ["Teams"],
+    "official_domains": ["microsoft.com", "teams.microsoft.com"],
+    "publisher": "Microsoft",
+    "keywords": ["teams", "microsoft teams 다운로드", "팀즈"]
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "aliases": [],
+    "official_domains": ["slack.com"],
+    "publisher": "Salesforce",
+    "keywords": ["slack", "slack 다운로드", "슬랙 설치"]
+  },
+  {
+    "id": "discord",
+    "name": "Discord",
+    "aliases": ["디스코드"],
+    "official_domains": ["discord.com"],
+    "publisher": "Discord Inc.",
+    "keywords": ["discord", "디스코드", "discord 다운로드"]
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "aliases": ["노션"],
+    "official_domains": ["notion.so"],
+    "publisher": "Notion Labs",
+    "keywords": ["notion", "노션", "notion 다운로드"]
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "aliases": [],
+    "official_domains": ["figma.com"],
+    "publisher": "Figma Inc.",
+    "keywords": ["figma", "figma 다운로드", "figma desktop"]
+  },
+  {
+    "id": "intellij",
+    "name": "IntelliJ IDEA",
+    "aliases": ["IntelliJ"],
+    "official_domains": ["jetbrains.com"],
+    "publisher": "JetBrains",
+    "keywords": ["intellij", "intellij idea 다운로드", "jetbrains"]
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "aliases": [],
+    "official_domains": ["python.org"],
+    "publisher": "Python Software Foundation",
+    "keywords": ["python 다운로드", "python 설치", "파이썬 설치"]
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "aliases": ["Node"],
+    "official_domains": ["nodejs.org"],
+    "publisher": "OpenJS Foundation",
+    "keywords": ["node.js", "nodejs 다운로드", "node 설치"]
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "aliases": ["JDK", "JRE"],
+    "official_domains": ["java.com", "oracle.com", "adoptium.net"],
+    "publisher": "Oracle / Eclipse",
+    "keywords": ["java 다운로드", "jdk 다운로드", "자바 설치"]
+  },
+  {
+    "id": "filezilla",
+    "name": "FileZilla",
+    "aliases": [],
+    "official_domains": ["filezilla-project.org"],
+    "publisher": "Tim Kosse",
+    "keywords": ["filezilla", "filezilla 다운로드", "ftp 클라이언트"]
+  },
+  {
+    "id": "wireshark",
+    "name": "Wireshark",
+    "aliases": [],
+    "official_domains": ["wireshark.org"],
+    "publisher": "Wireshark Foundation",
+    "keywords": ["wireshark", "wireshark 다운로드", "패킷 분석"]
+  },
+  {
+    "id": "virtualbox",
+    "name": "VirtualBox",
+    "aliases": [],
+    "official_domains": ["virtualbox.org"],
+    "publisher": "Oracle",
+    "keywords": ["virtualbox", "virtualbox 다운로드", "가상머신"]
+  },
+  {
+    "id": "vmware",
+    "name": "VMware",
+    "aliases": [],
+    "official_domains": ["vmware.com", "broadcom.com"],
+    "publisher": "Broadcom",
+    "keywords": ["vmware", "vmware workstation 다운로드"]
+  },
+  {
+    "id": "kdenlive",
+    "name": "Kdenlive",
+    "aliases": [],
+    "official_domains": ["kdenlive.org"],
+    "publisher": "KDE",
+    "keywords": ["kdenlive", "kdenlive 다운로드", "영상 편집"]
+  },
+  {
+    "id": "handbrake",
+    "name": "HandBrake",
+    "aliases": [],
+    "official_domains": ["handbrake.fr"],
+    "publisher": "HandBrake Team",
+    "keywords": ["handbrake", "handbrake 다운로드", "동영상 변환"]
+  },
+  {
+    "id": "audacity",
+    "name": "Audacity",
+    "aliases": [],
+    "official_domains": ["audacityteam.org"],
+    "publisher": "Audacity Team",
+    "keywords": ["audacity", "audacity 다운로드", "오디오 편집"]
+  },
+  {
+    "id": "inkscape",
+    "name": "Inkscape",
+    "aliases": [],
+    "official_domains": ["inkscape.org"],
+    "publisher": "Inkscape Project",
+    "keywords": ["inkscape", "inkscape 다운로드", "벡터 편집"]
+  },
+  {
+    "id": "gimp",
+    "name": "GIMP",
+    "aliases": [],
+    "official_domains": ["gimp.org"],
+    "publisher": "GNOME Project",
+    "keywords": ["gimp", "gimp 다운로드", "이미지 편집"]
+  },
+  {
+    "id": "blender",
+    "name": "Blender",
+    "aliases": [],
+    "official_domains": ["blender.org"],
+    "publisher": "Blender Foundation",
+    "keywords": ["blender", "blender 다운로드", "3d 모델링"]
+  },
+  {
+    "id": "steam",
+    "name": "Steam",
+    "aliases": ["스팀"],
+    "official_domains": ["store.steampowered.com", "steampowered.com"],
+    "publisher": "Valve Corporation",
+    "keywords": ["steam", "스팀", "steam 다운로드"]
+  },
+  {
+    "id": "gopro",
+    "name": "GoPro Player",
+    "aliases": [],
+    "official_domains": ["gopro.com"],
+    "publisher": "GoPro Inc.",
+    "keywords": ["gopro player 다운로드", "고프로 플레이어"]
+  },
+  {
+    "id": "daum-potplayer",
+    "name": "다음팟플레이어",
+    "aliases": ["PotPlayer"],
+    "official_domains": ["potplayer.daum.net", "kakao.com"],
+    "publisher": "Kakao Corp.",
+    "keywords": ["팟플레이어", "potplayer", "다음팟플레이어 다운로드"]
+  }
+]

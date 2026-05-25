@@ -1,0 +1,254 @@
+/* content/overlay.css */
+
+/* ══════════════════════════════════
+   결과 카드 — 라이트 모드
+   ══════════════════════════════════ */
+[data-cj-rank].cj-card {
+  border-radius: 10px !important;
+  padding: 14px 16px !important;
+  border: 1px solid transparent !important;
+  animation: cj-fade-in 0.25s ease;
+}
+
+[data-cj-rank].cj-card-official { background: #f6fef9 !important; border-color: #ceead6 !important; }
+[data-cj-rank].cj-card-trusted  { background: #f6fef9 !important; border-color: #d4edda !important; }
+[data-cj-rank].cj-card-unknown  { background: #f8f9fa !important; border-color: #e9ecef !important; }
+[data-cj-rank].cj-card-warning  { background: #fffef5 !important; border-color: #fde68a !important; }
+[data-cj-rank].cj-card-danger   { background: #fff8f8 !important; border-color: #fecaca !important; }
+
+/* ══════════════════════════════════
+   결과 카드 — 다크 모드
+   ══════════════════════════════════ */
+[data-cj-theme="dark"] [data-cj-rank].cj-card-official {
+  background: rgba(13, 101, 45, 0.20) !important;
+  border-color: rgba(74, 222, 128, 0.35) !important;
+}
+[data-cj-theme="dark"] [data-cj-rank].cj-card-trusted {
+  background: rgba(25, 135, 84, 0.16) !important;
+  border-color: rgba(134, 239, 172, 0.30) !important;
+}
+[data-cj-theme="dark"] [data-cj-rank].cj-card-unknown {
+  background: rgba(108, 117, 125, 0.14) !important;
+  border-color: rgba(156, 163, 175, 0.28) !important;
+}
+[data-cj-theme="dark"] [data-cj-rank].cj-card-warning {
+  background: rgba(180, 83, 9, 0.18) !important;
+  border-color: rgba(251, 191, 36, 0.40) !important;
+}
+[data-cj-theme="dark"] [data-cj-rank].cj-card-danger {
+  background: rgba(197, 34, 31, 0.18) !important;
+  border-color: rgba(248, 113, 113, 0.40) !important;
+}
+
+/* ══════════════════════════════════
+   등급 레이블 pill
+   ══════════════════════════════════ */
+.cj-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 99px;
+  color: #fff;
+  margin-bottom: 8px;
+  font-family: -apple-system, sans-serif;
+  letter-spacing: 0.02em;
+  writing-mode: horizontal-tb !important;
+  transform: none !important;
+  direction: ltr !important;
+  unicode-bidi: normal !important;
+}
+
+.cj-label--official { background: #0d652d; }
+.cj-label--trusted  { background: #198754; }
+.cj-label--unknown  { background: #6c757d; }
+.cj-label--warning  { background: #b45309; }
+.cj-label--danger   { background: #c5221f; }
+
+/* ══════════════════════════════════
+   메타 줄 — 라이트 모드
+   ══════════════════════════════════ */
+.cj-meta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 2px;
+  font-family: arial, sans-serif;
+  writing-mode: horizontal-tb !important;
+  transform: none !important;
+  direction: ltr !important;
+  unicode-bidi: normal !important;
+}
+
+.cj-meta--official { color: #0d652d; }
+.cj-meta--trusted  { color: #198754; }
+.cj-meta--unknown  { color: #6b7280; }
+.cj-meta--warning  { color: #b45309; }
+.cj-meta--danger   { color: #c5221f; font-weight: 500; }
+
+/* 메타 줄 — 다크 모드 */
+[data-cj-theme="dark"] .cj-meta--official { color: #4ade80; }
+[data-cj-theme="dark"] .cj-meta--trusted  { color: #86efac; }
+[data-cj-theme="dark"] .cj-meta--unknown  { color: #9ca3af; }
+[data-cj-theme="dark"] .cj-meta--warning  { color: #fbbf24; }
+[data-cj-theme="dark"] .cj-meta--danger   { color: #f87171; font-weight: 500; }
+
+/* ══════════════════════════════════
+   스니펫 블러
+   ══════════════════════════════════ */
+.cj-snip-blur {
+  position: relative;
+  overflow: hidden;
+}
+
+.cj-snip-blur--unknown > *:not(.cj-snip-reveal) { filter: blur(2px) !important; opacity: 0.6; pointer-events: none; user-select: none; }
+.cj-snip-blur--warning > *:not(.cj-snip-reveal) { filter: blur(4px) !important; pointer-events: none; user-select: none; }
+.cj-snip-blur--danger  > *:not(.cj-snip-reveal) { filter: blur(6px) !important; pointer-events: none; user-select: none; }
+
+.cj-snip-reveal {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: -apple-system, sans-serif;
+  z-index: 1;
+  background: transparent;
+  transition: background 0.15s ease;
+  writing-mode: horizontal-tb !important;
+  transform: none !important;
+  direction: ltr !important;
+  unicode-bidi: normal !important;
+}
+
+/* 호버 시에만 살짝 hint 배경 */
+.cj-snip-reveal:hover {
+  background: rgba(127, 127, 127, 0.06);
+}
+
+/* 스니펫 reveal — 라이트 (배경 없이 text-shadow로 가독성 확보) */
+.cj-snip-blur--unknown .cj-snip-reveal { color: #4b5563; text-shadow: 0 1px 3px rgba(255,255,255,0.9), 0 0 6px rgba(255,255,255,0.6); }
+.cj-snip-blur--warning .cj-snip-reveal { color: #92400e; text-shadow: 0 1px 3px rgba(255,255,255,0.9), 0 0 6px rgba(255,255,255,0.6); }
+.cj-snip-blur--danger  .cj-snip-reveal { color: #c5221f; text-shadow: 0 1px 3px rgba(255,255,255,0.9), 0 0 6px rgba(255,255,255,0.6); }
+
+/* 스니펫 reveal — 다크 */
+[data-cj-theme="dark"] .cj-snip-blur--unknown .cj-snip-reveal { color: #d1d5db; text-shadow: 0 1px 3px rgba(0,0,0,0.85), 0 0 6px rgba(0,0,0,0.6); }
+[data-cj-theme="dark"] .cj-snip-blur--warning .cj-snip-reveal { color: #fbbf24; text-shadow: 0 1px 3px rgba(0,0,0,0.85), 0 0 6px rgba(0,0,0,0.6); }
+[data-cj-theme="dark"] .cj-snip-blur--danger  .cj-snip-reveal { color: #f87171; text-shadow: 0 1px 3px rgba(0,0,0,0.85), 0 0 6px rgba(0,0,0,0.6); }
+
+/* ══════════════════════════════════
+   상단 배너
+   ══════════════════════════════════ */
+#cj-verdict-banner {
+  border: 1px solid #ceead6;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  background: #fafffe;
+  font-family: -apple-system, sans-serif;
+  animation: cj-fade-in 0.25s ease;
+}
+
+#cj-verdict-banner .cj-banner-domain {
+  font-weight: 600;
+  color: #0d652d;
+}
+
+/* 배너 — 다크 모드 */
+[data-cj-theme="dark"] #cj-verdict-banner {
+  background: rgba(13, 101, 45, 0.18);
+  border-color: rgba(74, 222, 128, 0.35);
+}
+[data-cj-theme="dark"] #cj-verdict-banner .cj-banner-domain {
+  color: #4ade80;
+}
+
+@keyframes cj-fade-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ══════════════════════════════════
+   분석 중 로딩 오버레이 (전체 화면 + 클릭 차단)
+   ══════════════════════════════════ */
+#cj-loading-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483647 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(15, 18, 24, 0.55) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  animation: cj-overlay-fade-in 0.18s ease !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  cursor: wait !important;
+}
+
+#cj-loading-overlay .cj-loading-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 28px 36px;
+  background: rgba(28, 30, 38, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  max-width: 90vw;
+  min-width: 280px;
+}
+
+#cj-loading-overlay .cj-loading-spinner {
+  width: 42px;
+  height: 42px;
+  border: 3px solid rgba(255, 255, 255, 0.12);
+  border-top-color: #4ade80;
+  border-radius: 50%;
+  animation: cj-spin 0.85s linear infinite;
+}
+
+#cj-loading-overlay .cj-loading-text {
+  color: #f3f4f6;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
+}
+
+#cj-loading-overlay .cj-loading-query {
+  color: #4ade80;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#cj-loading-overlay .cj-loading-hint {
+  color: rgba(243, 244, 246, 0.55);
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+@keyframes cj-overlay-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes cj-spin {
+  to { transform: rotate(360deg); }
+}
