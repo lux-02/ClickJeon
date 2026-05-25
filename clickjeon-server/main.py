@@ -25,8 +25,12 @@ app.include_router(analyze_router)
 
 @app.get("/")
 async def landing():
-    path = os.path.join(os.path.dirname(__file__), "public", "index.html")
-    return FileResponse(path, media_type="text/html")
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "public", "index.html")
+    try:
+        with open(path, encoding="utf-8") as f:
+            return HTMLResponse(f.read())
+    except Exception as e:
+        return HTMLResponse(f"<pre>path={path}\nerr={e}\ncwd={os.getcwd()}\nfiles={os.listdir(os.path.dirname(os.path.abspath(__file__)))}</pre>", status_code=200)
 
 
 @app.get("/health")
