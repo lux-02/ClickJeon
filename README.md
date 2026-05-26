@@ -4,7 +4,7 @@
 
 > **검색 결과를 클릭하기 전에, AI가 먼저 확인합니다**
 
-구글 검색 결과에서 SEO 포이즈닝, 피싱 사이트, 경쟁사 우회 광고를 탐지하는 Chrome 확장 프로그램입니다. 팝업 버튼 하나로 AI가 검색 결과 전체를 분석하고, 의심스러운 링크는 블러 처리해 클릭을 방지합니다.
+구글 검색 결과에서 SEO 포이즈닝, 피싱 사이트, 경쟁사 우회 광고를 탐지하는 Chrome / 네이버 웨일 확장 프로그램입니다. 팝업 버튼 하나로 AI가 검색 결과 전체를 분석하고, 의심스러운 링크는 블러 처리해 클릭을 방지합니다.
 
 > **SEO 포이즈닝이란?** 악성 사이트가 검색 엔진 최적화 기법을 악용해 공식 사이트인 척 상위 노출되는 공격입니다. "카카오톡 다운로드", "어도비 설치" 등 인기 키워드를 노려 악성코드·피싱 페이지로 유도합니다.
 
@@ -80,7 +80,7 @@ Softonic 같은 비공식 다운로드 사이트는 **주의** 배지와 함께 
 
 | 영역 | 기술 |
 |------|------|
-| 확장 프로그램 | Chrome Extension MV3 (Vanilla JS) |
+| 확장 프로그램 | Chrome / Naver Whale Extension MV3 (Vanilla JS) |
 | 백엔드 | FastAPI (Python) + Vercel |
 | AI 분석 | GPT-5.4-mini |
 | 캐시 | Upstash Redis |
@@ -90,7 +90,9 @@ Softonic 같은 비공식 다운로드 사이트는 **주의** 배지와 함께 
 
 ## 설치 방법
 
-**[Chrome 웹스토어에서 설치](https://chromewebstore.google.com/detail/inopiebmhgffoijdijpimkbmkicbeejh)** — 클릭 한 번으로 바로 설치할 수 있습니다.
+**[Chrome 웹스토어에서 설치](https://chromewebstore.google.com/detail/inopiebmhgffoijdijpimkbmkicbeejh)** — Chrome / Brave / Edge 등 Chromium 기반 브라우저
+
+**[네이버 웨일 스토어에서 설치](https://store.whale.naver.com/detail/nhpnnlhomdaheccmmcoikdmaacicmbbj)** — 네이버 웨일 브라우저
 
 또는 소스에서 직접 로드하려면:
 
